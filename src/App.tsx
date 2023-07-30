@@ -1,24 +1,36 @@
-import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Nav from './component/nav';
+
+import { render } from 'react-dom';
+import Login from './component/login';
+// import Carousel from './Carousel';
+import 'react-responsive-carousel/lib/styles/carousel.min.css';
+import {
+  BrowserRouter ,
+  Route,
+  Routes
+} from "react-router-dom";
+import Combine from './component/combine';
+import AddData from './component/adddata';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+     <Nav/>
+    
+     <BrowserRouter>
+      <Routes>
+   
+       {/* <Route path="addAdmin" element={<Signup/>}/> */}
+          <Route path='admin' element={<Login/>}/>
+          <Route path='/' element={<Combine/>}/>
+          <Route  path="addata" element={<AddData />} />:
+
+         
+        
+      </Routes>
+  
+    </BrowserRouter>
     </div>
   );
 }
