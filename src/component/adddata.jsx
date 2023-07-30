@@ -27,7 +27,7 @@ function AddData() {
       price: desc
     };
 
-    Axios.post('http://localhost:3002/data', userObject)
+    Axios.post('https://pet-backen.onrender.com/data', userObject)
       .then((res) => {
         console.log(res.data);
       }).catch((error) => {

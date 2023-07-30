@@ -9,7 +9,7 @@ const CardList = () => {
 
     useEffect(() => {
       // Fetch data from backend when component mounts
-      axios.get('http://localhost:3002/data/val')
+      axios.get('https://pet-backen.onrender.com/data/val')
         .then((response) => {
           // Update state with fetched data
           console.log(response.data);

@@ -11,7 +11,7 @@ const Login: React.FC = () => {
     e.preventDefault();
     try {
       console.log("in handleSubmit");
-      const response = await axios.post<{ token: string }>('http://localhost:3002/api/dashboard/admin', { email, password });
+      const response = await axios.post<{ token: string }>('https://pet-backen.onrender.com/api/dashboard/admin', { email, password });
       localStorage.setItem('token', response.data.token);
       navigate('/addata');
     } catch (error) {
