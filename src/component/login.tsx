@@ -21,9 +21,11 @@ const Login: React.FC = () => {
   };
 
   return (
-    <div className='flex justify-center items-center h-screen bg-green-300'>
-      <p>login credential==="email": "login@email.com",
+    <div className=' bg-green-300'>
+    <p>login credential==="email": "login@email.com",
   "password": "1234"</p>
+    <div className='flex justify-center items-center h-screen'>
+      
       <form onSubmit={handleSubmit} className='rounded bg-yellow-300'>
         <label className='m-3 font-mono text-lg'>
           Email
@@ -39,6 +41,7 @@ const Login: React.FC = () => {
         <br />
         <button type="submit" className='font-mono text-lg rounded-md m-4 bg-blue-600 p-2'>Login</button>
       </form>
+    </div>
     </div>
   );
 };

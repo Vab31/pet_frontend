@@ -11,7 +11,7 @@ export default function Nav() {
       <img src="https://see.fontimg.com/api/renderfont4/VGMDl/eyJyIjoiZnMiLCJoIjoyOSwidyI6MTAwMCwiZnMiOjI5LCJmZ2MiOiIjOENCOTRFIiwiYmdjIjoiI0ZGRkZGRiIsInQiOjF9/UGV0cGl3/paw-wow-block.png" className="ml-3 text-xl"/>
 
     <nav className="md:ml-auto md:mr-auto flex flex-wrap items-center font-serif  text-base justify-center">
-      <a className="mr-5 hover:text-gray-900 hover:font-semibold">First Link</a>
+      <a className="mr-5 hover:text-gray-900 hover:font-semibold" href='/'>Home</a>
       <a className="mr-5 hover:text-gray-900 hover:font-semibold ">Second Link</a>
       <a className="mr-5 hover:text-gray-900 hover:font-semibold">Third Link</a>
       <a className="mr-5 hover:text-gray-900 hover:font-semibold">Fourth Link</a>

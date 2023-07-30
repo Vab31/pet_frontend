@@ -14,6 +14,8 @@ import Combine from './component/combine';
 import AddData from './component/adddata';
 
 function App() {
+  const isLoggedIn = !!localStorage.getItem('token');
+  console.log(isLoggedIn);
   return (
     <div className="App">
      <Nav/>
@@ -24,8 +26,10 @@ function App() {
        {/* <Route path="addAdmin" element={<Signup/>}/> */}
           <Route path='admin' element={<Login/>}/>
           <Route path='/' element={<Combine/>}/>
+          {isLoggedIn?
           <Route  path="addata" element={<AddData />} />:
-
+          <Route  path="addata" element={<Login />} />
+          }
          
         
       </Routes>
